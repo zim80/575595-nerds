@@ -1,6 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Максим Зайцев](https://up.htmlacademy.ru/htmlcss/20/user/575595).
+* Наставник: [Михаил Поданев](https://up.htmlacademy.ru/htmlcss/20/user/63947).
 
 ---
 
