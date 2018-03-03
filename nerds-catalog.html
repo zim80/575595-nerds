@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых шаблонов</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it" width="150" height="100" alt="Логотип «Nёrd's»">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Студия</a></li>
+            <li><a href="info.html">Клиенты</a></li>
+            <li class="site-navigation-current"><a href="nerds-catalog.html">Магазин</a></li>
+            <li><a href="info.html">Контакты</a></li>
+          </ul>
+          <ul class="user-cart">
+            <li class="cart">Корзина</li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+
+        <div class="price-slider">
+          <span>от</span><input type="text" id="minCost2" value="0">
+          <span>до</span><input type="text" id="maxCost2" value="15000">
+        </div>
+        <!--Здесь будет форма-->
+      </section>
+
+      <section class="catalog">
+          <h2 class="visually-hidden">Список продукции</h2>
+          <div class="sorting">
+            <b>Сортировать</b>
+            <ul class="sorting-management">
+              <li class="sorting-position-current">По цене</li>
+              <li class="sorting-position">По типу</li>
+              <li class="sorting-position">По названию</li>
+              <li class="arrow-position-current">down</li>
+              <li class="arrow-position">up</li>
+            </ul>
+          </div>
+
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3 class="visualy-hidden">Sedona</h3>
+              <div class="catalog-item-image">
+                  <img src="http://placehold.it" width="150" height="100" alt="Sedona">
+                  <div class="catalog-item-hover">
+                    <h3><a href="#">Sedona</a></h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a class="button" href="#">9900 руб.</a>
+                  </div>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <h3 class="visualy-hidden">Pink App</h3>
+              <div class="catalog-item-image">
+                  <img src="http://placehold.it" width="150" height="100" alt="Pink">
+                  <div class="catalog-item-hover">
+                    <h3><a href="#">Pink App</a></h3>
+                    <p>Продуктовый лендинг приложения для iOS и Android</p>
+                    <a class="button" href="#">9900 руб.</a>
+                  </div>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <h3 class="visualy-hidden">Barbershop</h3>
+              <div class="catalog-item-image">
+                  <img src="http://placehold.it" width="150" height="100" alt="Barbershop">
+                  <div class="catalog-item-hover">
+                    <h3><a href="#">Barbershop</a></h3>
+                    <p>Сайт салоны красоты.Для мужчин, да.</p>
+                    <a class="button" href="#">9900 руб.</a>
+                  </div>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <h3 class="visualy-hidden">Mishka</h3>
+              <div class="catalog-item-image">
+                  <img src="http://placehold.it" width="150" height="100" alt="Mishka">
+                  <div class="catalog-item-hover">
+                    <h3><a href="#">Mishka</a></h3>
+                    <p>Интернет-магазин вязаных игрушек.</p>
+                    <a class="button" href="#">9900 руб.</a>
+                  </div>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <h3 class="visualy-hidden">A Plus</h3>
+              <div class="catalog-item-image">
+                  <img src="http://placehold.it" width="150" height="100" alt="A Plus">
+                  <div class="catalog-item-hover">
+                    <h3><a href="#">A Plus</a></h3>
+                    <p>Лендинг курсов повышения квалификации.</p>
+                    <a class="button" href="#">9900 руб.</a>
+                  </div>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <h3 class="visualy-hidden">Кваст</h3>
+              <div class="catalog-item-image">
+                  <img src="http://placehold.it" width="150" height="100" alt="Кваст">
+                  <div class="catalog-item-hover">
+                    <h3><a href="#">Кваст</a></h3>
+                    <p>Промо-сайт производителя крафтового кваса.</p>
+                    <a class="button" href="#">9900 руб.</a>
+                  </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
+          </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+          <b class="slogan">Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
+
+      <section class="modal modal-wright-us">
+          <h2>Напишите нам</h2>
+          <!--Здесь будет форма-->
+          <span class="modal-close">x</span>
+        </section>
+    </body>
+  </html>
