@@ -18,7 +18,9 @@
             <li><a href="info.html">Контакты</a></li>
           </ul>
           <ul class="user-cart">
-            <li class="cart">Корзина</li>
+            <li class="cart">
+              <a class="cart-link" href="cart.html">Корзина</a>
+            </li>
           </ul>
       </nav>
     </header>
@@ -28,12 +30,69 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-
-        <div class="price-slider">
-          <span>от</span><input type="text" id="minCost2" value="0">
-          <span>до</span><input type="text" id="maxCost2" value="15000">
-        </div>
-        <!--Здесь будет форма-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <div class="price-slider">
+              <p class="price-slider-range">
+                <input type="range" min="0" max="1500" step="1" id="rating" value="10000">
+              </p>
+              <span>от</span><input type="text" id="minCost2" value="0">
+              <span>до</span><input type="text" id="maxCost2" value="15000">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                  name="product-group" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                  name="product-group" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                  name="product-group"value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="advantages" id="filter-advantages">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -151,9 +210,9 @@
     <footer class="main-footer">
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#" aria-label="В контакте">Вконтакте</a></li>
+            <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a class="social-button" href="#" aria-label="Инстаграмм">Инстаграм</a></li>
           </ul>
           <b class="slogan">Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -161,9 +220,23 @@
       </footer>
 
       <section class="modal modal-wright-us">
-          <h2>Напишите нам</h2>
-          <!--Здесь будет форма-->
-          <span class="modal-close">x</span>
-        </section>
+        <h2>Напишите нам</h2>
+        <form class="wright-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="wright-item">
+            <label for="wright-name"><b class="modal-bold">Ваше имя:</b></label>
+            <input type="text" name="name" id="wright-name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="wright-item">
+            <label for="wright-email"><b class="modal-bold">Ваш e-mail:</b></label>
+            <input type="email" name="name" id="wright-email" value="" placeholder="email@example.com">
+          </p>
+          <p class="wright-item">
+            <label for="wright-area"><b class="modal-bold">Текст письма:</b></label>
+            <textarea name="wright-area" id="wright-area" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </body>
   </html>
