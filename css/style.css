@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-input + label {
+  color: #283136;
+}
+
+.filter-input:hover + label {
+  color: #283136;
+}
+
+.filter-input:disabled + label {
+  color: #283136;
+
+  opacity: 0.3;
+}
+
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-cart {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-cart a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-cart a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-cart a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:active,
+.user-cart a:active {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #fb565a;
+}
+
+.main-slider {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #eeeeee;
+}
+
+.main-slider .slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: left;
+}
+
+.feature-item p,
+.self-presentation p,
+.tasks-list li {
+  color: #283136;
+}
+
+
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.features,
+.self-presentation,
+.partners {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.self-presentation .slogan {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.tasks b,
+.statistics b {
+  text-transform: uppercase;
+}
+
+.statistics ul {
+  list-style: none;
+}
+
+.percent {
+  font-size: 45px;
+  line-height: 10.06px;
+}
+
+.statistics-list p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
+}
+
+.button-red {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button-red:hover {
+  background-color: #e74246;
+}
+
+.button-red:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #00ca74;
+  border: none;
+}
+
+.button-green:hover {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-yellow {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #efc84a;
+  border: none;
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #eab534;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  opacity: 0.3;
+}
+
+.contact-info {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: #666666;
+
+  background-color: #ffffff;
+}
+
+.contact-info b {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.sorting b {
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.sorting-management {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-management .sorting-position-current {
+  color: #000000;
+  opacity: 1.0;
+}
+
+.catalog-item-hover {
+  background-color: #eeeeee;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.catalog-item-hover h3 {
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+}
+
+.catalog-item-hover h3 a {
+  color: #000000;
+}
+
+.catalog-item-hover p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
+
+.wright-item input,
+.wright-item textarea {
+  font: inherit;
+  color: rgba(68, 68, 68, 0.5);
+
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+}
+
+.wright-item input:hover,
+.wright-item textarea:hover {
+  font: inherit;
+  color: rgba(68, 68, 68, 0.5);
+
+  background-color: transparent;
+  border: 2px solid #b4b9bb;
+}
+
+.wright-item input:focus,
+.wright-item textarea:focus {
+  font: inherit;
+  color: #444444;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.wright-item input:invalid,
+.wright-item textarea:invalid {
+  font: inherit;
+  color: #e74246;
+
+  background-color: transparent;
+  border: 2px solid #e74246;
+}
+
+.catalog-item-image img {
+  border: 2px solid #e5e5e5;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.footer-social .slogan {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-social p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+.social-list {
+  list-style: none;
+}
