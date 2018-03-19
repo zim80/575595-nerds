@@ -14,44 +14,7 @@ body {
 a {
   text-decoration: none;
 }
-
-.page-title {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-}
-
-.filter fieldset {
-  border: none;
-}
-
-.filter legend {
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.filter ul {
-  list-style: none;
-  line-height: 20px;
-}
-
-.filter-input + label {
-  color: #283136;
-}
-
-.filter-input:hover + label {
-  color: #283136;
-}
-
-.filter-input:disabled + label {
-  color: #283136;
-
-  opacity: 0.3;
-}
-
-
+/*INDEX*/
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -86,23 +49,6 @@ a {
 .user-cart a:active {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid #fb565a;
-}
-
-.main-slider {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283136;
-
-  background-color: #eeeeee;
-}
-
-.main-slider .slogan {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-  color: #000000;
-
 }
 
 .feature-list {
@@ -229,6 +175,45 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+
+/*--------------------------*/
+/*NERDS-CATALOG*/
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-input + label {
+  color: #283136;
+}
+
+.filter-input:hover + label {
+  color: #283136;
+}
+
+.filter-input:disabled + label {
+  color: #283136;
+
+  opacity: 0.3;
+}
+
 .filter-button {
   font: inherit;
   font-size: 16px;
@@ -251,35 +236,8 @@ a {
   opacity: 0.3;
 }
 
-.contact-info {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-
-  color: #666666;
-
-  background-color: #ffffff;
-}
-
-.contact-info b {
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-
-  color: #000000;
-}
-
-.sorting b {
-font-size: 18px;
-line-height: 30px;
-text-transform: uppercase;
-}
-
-.catalog-list {
-  list-style: none;
-}
-
-.sorting-management {
+.sorting-position,
+.arrow-position  {
   list-style: none;
   font-size: 14px;
   line-height: 18px;
@@ -288,7 +246,8 @@ text-transform: uppercase;
   opacity: 0.3;
 }
 
-.sorting-management .sorting-position-current {
+.sorting-position-current,
+.arrow-position-current {
   color: #000000;
   opacity: 1.0;
 }
@@ -342,6 +301,64 @@ text-transform: uppercase;
   background-color: #ffffff;
   border: 2px solid #dbdbdb;
 }
+
+.sorting b {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  }
+
+  .catalog-list {
+    list-style: none;
+  }
+
+
+/*--------------------------*/
+
+
+
+
+/*MAIN-SLIDER*/
+.main-slider {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #eeeeee;
+}
+
+.main-slider .slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+
+}
+/*--------------------------*/
+
+
+
+.contact-info {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: #666666;
+
+  background-color: #ffffff;
+}
+
+.contact-info b {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+
+
 
 
 .wright-item input,
@@ -403,4 +420,241 @@ text-transform: uppercase;
 }
 .social-list {
   list-style: none;
+}
+/*VISUALLY-HIDDEN*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 2476px;;
+}
+
+body {
+  /* Временно для сетки */
+ /*  background-image: url('../img/nerds-index-png.png');
+  background-size: 1440px auto;
+  background-repeat: no-repeat; */
+}
+
+.main-header {
+  margin-bottom: 18px;
+  background-color: #eeeeee;
+
+  /* Временно для сетки */
+  min-height: 114px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  /* Временно для сетки */
+  min-height: 114px;
+  background-color: #eeeeee;
+ }
+ .main-header-logo {
+  width: 160px;
+  height: 65px;
+
+  /* Временно для сетки */
+  /* display: block; */
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 65px;
+}
+
+.user-cart {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 65px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  background-color: #eeeeee;
+  margin-top: 43px;
+
+  /* Временно для сетки */
+  min-height: 65px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-slider {
+  /* Временно для сетки */
+  min-height: 413px;
+  margin-bottom: 80px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 427px;
+}
+
+.feature-item {
+  width: 300px;
+  margin-bottom: 40px;
+  /* Временно для сетки */
+  min-height: 427px;
+}
+
+.self-presentation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  /* Временно для сетки */
+  min-height: 415px;
+}
+
+.presentation-1 {
+  width: 700px;
+  padding-top: 30px;
+}
+
+.presentation-2 {
+  width: 400px;
+}
+
+.presentation-2 img {
+  width: 360px;
+  height: 208px;
+  margin-left: 36px;
+}
+
+.partners {
+  margin-bottom: 80px;
+  /* Временно для сетки */
+  min-height: 180px;
+  }
+
+
+  .partners-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 1160px;
+
+    list-style: none;
+
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+
+  .partners-list-item {
+    width: 210px;
+  }
+
+  .footer-social {
+    padding: 60px 0;
+    /* Временно для сетки */
+    min-height: 220px;
+
+  }
+.social-list {
+  width: 220px;
+  height: 80px;
+  margin-right: 138px;
+  margin-top: 0;
+}
+
+.footer-slogan {
+  width: 580px;
+  height: 70px;
+}
+
+.footer-social .container {
+  display: flex;
+}
+
+.page-title-container {
+background-color: #eeeeee;
+min-height: 200px;
+}
+
+.filters {
+  width: 260px;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 20px;
+  height: 780px;
+
+
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 97px;
+}
+
+.catalog-item {
+width: 360px;
+height: 620px;
+margin-bottom: 28px;
+margin-right: 20px;
+}
+
+.page-title-wrapper {
+  display: flex;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 50px;
 }
