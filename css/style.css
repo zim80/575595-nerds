@@ -14,6 +14,10 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*INDEX*/
 .main-navigation {
   font-size: 16px;
@@ -90,6 +94,7 @@ a {
 
 .statistics ul {
   list-style: none;
+  display: flex;
 }
 
 .percent {
@@ -182,7 +187,9 @@ a {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin-left: 355px
 }
+
 
 .filter fieldset {
   border: none;
@@ -244,13 +251,21 @@ a {
   text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
+  justify-content: space-between;
 }
 
 .sorting-position-current,
 .arrow-position-current {
   color: #000000;
   opacity: 1.0;
+  justify-content: space-between;
 }
+
+.sorting-management {
+  display: flex;
+
+}
+
 
 .catalog-item-hover {
   background-color: #eeeeee;
@@ -420,6 +435,19 @@ a {
 }
 .social-list {
   list-style: none;
+  display: flex;
+}
+
+.social-list li {
+  justify-content:space-between;
+}
+
+.social-button {
+ 
+  width: 79px;
+  height: 79px;
+
+  background-color: #e1e1e1;
 }
 /*VISUALLY-HIDDEN*/
 .visually-hidden {
@@ -429,6 +457,24 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -467,6 +513,7 @@ body {
  .main-header-logo {
   width: 160px;
   height: 65px;
+  margin-top: 6px;
 
   /* Временно для сетки */
   /* display: block; */
@@ -475,23 +522,50 @@ body {
 .site-navigation {
   margin: 0;
   padding: 0;
+  padding-left: 143px;
+  padding-top: 8px;
   width: 600px;
+  display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 
   /* Временно для сетки */
-  min-height: 65px;
+ /*  min-height: 70px; */
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.site-navigation a{
+  display: block;
+  color: #000000;
+  padding: 24px 20px;
+
+  vertical-align: middle;
+}
+
+.user-cart a {
+  display: block;
+  color: #000000;
+  vertical-align: middle;
+  padding-top: 32px;
 }
 
 .user-cart {
   margin: 0;
   padding: 0;
-  width: 180px;
+  padding-left: 80px;
+  padding-top: 8px;
+  width: 95px;
+  display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 
   /* Временно для сетки */
-  min-height: 65px;
+ /*  min-height: 65px; */
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .main-navigation-wrapper {
@@ -504,7 +578,7 @@ body {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 120px;
 }
@@ -650,6 +724,7 @@ margin-right: 20px;
 }
 
 .pagination-list {
+  display: flex;
   padding: 0;
   margin: 0;
 
@@ -657,4 +732,8 @@ margin-right: 20px;
 
   /* Временно для сетки */
   min-height: 50px;
+}
+
+.map {
+  text-align: center;
 }
