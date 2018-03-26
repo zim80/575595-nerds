@@ -14,11 +14,11 @@
      <nav class="main-navigation">
          <div class="main-navigation-wrapper">
           <div class="container">
-         <a class="main-header-logo">
+         <a href="index.html" class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Nёrd's»">
           </a>
           <ul class="site-navigation">
-            <li><a href="info.html">Студия</a></li>
+            <li><a  class="current-page" href="#">Студия</a></li>
             <li><a href="info.html">Клиенты</a></li>
             <li><a href="nerds-catalog.html">Магазин</a></li>
             <li><a href="info.html">Контакты</a></li>
@@ -37,8 +37,31 @@
         <h1 class="visually-hidden">Студия веб-дизайна «Нёрдс»</h1>
 
         <section class="main-slider">
-         <!--  <div class="main-slider-item">
-            <b class="slogan">Долго, дорого, скрупулезно.</b>
+         <div class="main-slider-item"> <!--"container"-->
+            <h2 class="visually-hidden">Преимущества</h2>
+            <div class="slider-controls">
+              <i class="active"></i>
+              <i></i>
+              <i></i>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <h3>Долго, дорого,<br> скрупулезно.</h3>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Любим математику как никто другой</h3>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Только ночь,<br> только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <a class="slider-item-button button" href="#">Узнать больше</a>
+              </li>
+            </ul>
+            <!--<b class="slogan">Долго, дорого, скрупулезно.</b>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="button-red" href="nerds-catalog.html">Узнать больше</a>
             <img src="img/slide1.png" width="698" height="413" alt="Смартфоны">
@@ -56,6 +79,7 @@
             <img src="img/slide3.png" width="698" height="413" alt="Другие устройства">
           </div> -->
         </section>
+
 
          <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
@@ -158,7 +182,7 @@
               ул. Б. Конюшенная, д. 19/8<br><br>
               тел. +7 (812) 275-75-75
             </p>
-            <a class="button-red" href="contacts.html">Напишите нам</a>
+            <a class="button-red button-contact-red" href="contacts.html">Напишите нам</a>
           </div>
         </section>
       <div class="footer-social">
@@ -179,24 +203,26 @@
       </div>
     </footer>
 
-    <section class="modal modal-wright-us">
+    <!-- <section class="modal modal-wright-us">
       <h2>Напишите нам</h2>
       <form class="wright-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-wrap">
         <p class="wright-item">
-          <label for="wright-name"><b class="modal-bold">Ваше имя:</b></label>
+          <label for="wright-name"><b class="modal-bold">Ваше имя:</b></label><br>
           <input type="text" name="name" id="wright-name" value="" placeholder="Имя Фамилия">
         </p>
         <p class="wright-item">
-          <label for="wright-email"><b class="modal-bold">Ваш e-mail:</b></label>
+          <label for="wright-email"><b class="modal-bold">Ваш e-mail:</b></label><br>
           <input type="email" name="name" id="wright-email" value="" placeholder="email@example.com">
         </p>
         <p class="wright-item">
-          <label for="wright-area"><b class="modal-bold">Текст письма:</b></label>
+          <label for="wright-area"><b class="modal-bold">Текст письма:</b></label><br>
           <textarea name="wright-area" id="wright-area" placeholder="В свободной форме"></textarea>
         </p>
-          <button class="button-red" type="submit">Отправить</button>
+        </div>
+          <button class="button-red button-red-send" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
-    </section>
+    </section> -->
   </body>
 </html>
