@@ -727,6 +727,8 @@ img {
   color: #283136;
 
   background-color: #eeeeee;
+
+    margin: 0 auto;
 }
 
 .main-slider-item {
@@ -1133,8 +1135,8 @@ input[type="radio"].visually-hidden {
 
 html,
 body {
- width: 1200px;
- margin: 0 auto;
+/*  width: 1200px;
+ margin: 0 auto; */
  /*  min-height: 2476px;; */
 }
 
@@ -1248,13 +1250,14 @@ body {
   width: 100%;
   background-color: #eeeeee;
   margin-top: 43px;
+  display: flex;
 
   /* Временно для сетки */
   min-height: 65px;
 }
 
 .container {
-  /*  width: 1160px; */
+  width: 1200px;
   margin: 0 auto;
 
 }
@@ -1274,7 +1277,7 @@ body {
   display: flex;
   /* justify-content: space-between; */
   margin: 0;
-  padding-left: 0;
+  padding-left: 20px;
   padding-right: 80px;
 
 
@@ -1297,7 +1300,7 @@ body {
   /* justify-content: space-between; */
  /*  margin-bottom: 70px; */
   margin-top: 40px;
-  /* padding-left: 140px; */
+  padding-left: 60px;
 
   /* Временно для сетки */
   min-height: 486px;
