@@ -941,7 +941,7 @@ img {
   margin: 0;
   position: absolute;
   left: 20px;
-  bottom: 53px;
+  bottom: 60px;
   z-index: 100;
   font-size: 16px;
   line-height: 18px;
@@ -1259,6 +1259,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 
 }
 
@@ -1319,10 +1320,10 @@ body {
 }
 
 .presentation-2 {
-  width: 360px;
-  margin: 0;
+  width: 388px;
+  margin: 0px;
   margin-left: 100px;
-  padding: 0
+  padding: 0;
 }
 
 .presentation-2 img {
@@ -1399,9 +1400,10 @@ body {
   }
 .social-list {
   width: 220px;
-  height: 80px;
-  margin-right: 41px;
-  margin-top: 62px;
+    height: 80px;
+    margin-right: 41px;
+    margin-top: 62px;
+    margin-left: 20px;
 
 }
 
