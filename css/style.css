@@ -113,7 +113,6 @@ a {
 .self-presentation {
   border-bottom: 2px solid #eeeeee;
   margin: 0 auto;
-  /* padding: 0 20px; */
 }
 
 .self-presentation .slogan {
@@ -160,9 +159,6 @@ a {
   padding-top: 3px;
 }
 
-/* .statistics .percent {
-  padding-right: 17px;
-} */
 
 .button-red {
   font: inherit;
@@ -488,7 +484,7 @@ a {
 .filter-input-radio:checked + label::before {
   background-image: url("../img/radio-on.svg");
 }
-/**/
+
 .filter-option:hover::before {
   opacity: 1.0;
 }
@@ -587,7 +583,7 @@ a {
 .catalog-item {
   height: 616px;
   background-color: #e9e9e9;
-  /* display: inline-block; */
+
 }
 
 .catalog-item-hover {
@@ -869,7 +865,7 @@ a {
 }
 
 .circles {
-  /* display: inline-block; */
+
   position: absolute;
   top: 3px;
   left: 9px;
@@ -999,9 +995,6 @@ a {
 
 }
 
-/* .catalog-item-image img {
-  border: 1px solid #e5e5e5;
-} */
 .catalog-item-active {
   background-color: #4d4d4d;
 }
@@ -1018,10 +1011,6 @@ a {
   outline-offset: 0;
 }
 
-/* .footer-social {
-  padding-left: 20px;
-  padding-right: 20px;
-} */
 
 .footer-social .slogan {
   font-size: 36px;
@@ -1257,7 +1246,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
-  /* padding-left: 60px; */
+
 
   min-height: 486px;
 }
