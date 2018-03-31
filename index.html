@@ -7,8 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
-
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -133,21 +132,21 @@
           <ul class="statistics-list">
             <li>
               <b class="percent">146
-                <sup>%</sup>
+                <sup class="sup-percent">%</sup>
               </b>
               <br>
               <p>Уровень самоотдачи</p>
             </li>
             <li>
               <b class="percent">100
-                <sup>%</sup>
+                <sup class="sup-percent">%</sup>
               </b>
               <br>
               <p>Соблюдение сроков</p>
             </li>
             <li>
               <b class="percent">50
-                <sup>%</sup>
+                <sup class="sup-percent">%</sup>
               </b>
               <br>
               <p>Минимальная предоплата</p>
@@ -161,22 +160,22 @@
       <h2 class="visually-hidden">Наши партнёры</h2>
       <ul class="partners-list">
         <li class="partners-list-item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="partners-list-item-link" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy»">
           </a>
         </li>
         <li class="partners-list-item">
-          <a href="#">
+          <a class="partners-list-item-link" href="#">
             <img src="img/logo-2.png" width="209" height="90" alt="Барбершоп «Бородинский»">
           </a>
         </li>
         <li class="partners-list-item">
-          <a href="#">
+          <a class="partners-list-item-link" href="#">
             <img src="img/logo-3.png" width="185" height="52" alt="Оптика «Pink»">
           </a>
         </li>
         <li class="partners-list-item">
-          <a href="#">
+          <a class="partners-list-item-link" href="#">
             <img src="img/logo-4.png" width="173" height="84" alt="«Mishka»">
           </a>
         </li>
@@ -192,20 +191,20 @@
       <h2 class="visually-hidden">Как нас найти</h2>
 
       <div class="map">
-        <!-- <img src="img/map.jpg" width="1440" height="416" alt="Карта"> -->
+
       </div>
       <div class="container">
-      <div class="contact-info">
-        <p>
-          <b>NЁRDS DESIGN STUDIO</b>
-          <br> 191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8
-          <br>
-          <br> тел. +7 (812) 275-75-75
-        </p>
-        <a class="button-red button-contact-red" href="contacts.html">Напишите нам</a>
+        <div class="contact-info">
+          <p>
+            <b>NЁRDS DESIGN STUDIO</b>
+            <br> 191186, Санкт-Петербург,
+            <br> ул. Б. Конюшенная, д. 19/8
+            <br>
+            <br> тел. +7 (812) 275-75-75
+          </p>
+          <a class="button-red button-contact-red" href="contacts.html">Напишите нам</a>
+        </div>
       </div>
-    </div>
     </section>
     <div class="footer-social">
       <div class="container">
@@ -245,27 +244,36 @@
     </div>
   </footer>
 
-  <!-- <section class="modal modal-wright-us">
-      <h2>Напишите нам</h2>
-      <form class="wright-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-wrap">
+  <section class="modal modal-wright-us">
+    <h2>Напишите нам</h2>
+    <form class="wright-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-wrap">
         <p class="wright-item">
-          <label for="wright-name"><b class="modal-bold">Ваше имя:</b></label><br>
+          <label for="wright-name">
+            <b class="modal-bold">Ваше имя:</b>
+          </label>
+          <br>
           <input type="text" name="name" id="wright-name" value="" placeholder="Имя Фамилия">
         </p>
         <p class="wright-item">
-          <label for="wright-email"><b class="modal-bold">Ваш e-mail:</b></label><br>
+          <label for="wright-email">
+            <b class="modal-bold">Ваш e-mail:</b>
+          </label>
+          <br>
           <input type="email" name="name" id="wright-email" value="" placeholder="email@example.com">
         </p>
         <p class="wright-item">
-          <label for="wright-area"><b class="modal-bold">Текст письма:</b></label><br>
+          <label for="wright-area">
+            <b class="modal-bold">Текст письма:</b>
+          </label>
+          <br>
           <textarea name="wright-area" id="wright-area" placeholder="В свободной форме"></textarea>
         </p>
-        </div>
-          <button class="button-red button-red-send" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section> -->
+      </div>
+      <button class="button-red button-red-send" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
