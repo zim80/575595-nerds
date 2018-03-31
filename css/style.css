@@ -113,7 +113,7 @@ a {
 .self-presentation {
   border-bottom: 2px solid #eeeeee;
   margin: 0 auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .self-presentation .slogan {
@@ -160,9 +160,9 @@ a {
   padding-top: 3px;
 }
 
-.statistics .percent {
+/* .statistics .percent {
   padding-right: 17px;
-}
+} */
 
 .button-red {
   font: inherit;
@@ -390,7 +390,7 @@ a {
   padding: 8px 10px;
   margin-left: 10px;
 
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -587,7 +587,7 @@ a {
 .catalog-item {
   height: 616px;
   background-color: #e9e9e9;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .catalog-item-hover {
@@ -656,6 +656,9 @@ a {
   height: 44px;
 }
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 15px;
   position: relative;
 }
@@ -706,6 +709,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  background-color: #eeeeee;
 }
 
 .visually-hidden {
@@ -865,7 +869,7 @@ a {
 }
 
 .circles {
-  display: inline-block;
+  /* display: inline-block; */
   position: absolute;
   top: 3px;
   left: 9px;
@@ -933,6 +937,7 @@ a {
 
 .contacts {
   position: relative;
+  min-width: 1200px;
 }
 
 
@@ -994,9 +999,9 @@ a {
 
 }
 
-.catalog-item-image img {
+/* .catalog-item-image img {
   border: 1px solid #e5e5e5;
-}
+} */
 .catalog-item-active {
   background-color: #4d4d4d;
 }
@@ -1013,10 +1018,10 @@ a {
   outline-offset: 0;
 }
 
-.footer-social {
+/* .footer-social {
   padding-left: 20px;
   padding-right: 20px;
-}
+} */
 
 .footer-social .slogan {
   font-size: 36px;
@@ -1214,6 +1219,10 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.container-inner {
+  min-width: 1200px;
+}
+
 .main-navigation-wrapper .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1248,7 +1257,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
-  padding-left: 60px;
+  /* padding-left: 60px; */
 
   min-height: 486px;
 }
@@ -1256,6 +1265,7 @@ input[type="radio"].visually-hidden {
 .presentation-1 {
   width: 700px;
   padding-top: 35px;
+  margin-left: 20px;
 
 }
 
@@ -1265,7 +1275,7 @@ input[type="radio"].visually-hidden {
 }
 
 .presentation-2 {
-  width: 388px;
+  width: 380px;
   margin: 0px;
   margin-left: 100px;
   padding: 0;
