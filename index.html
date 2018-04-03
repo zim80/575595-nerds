@@ -189,10 +189,11 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-
       <div class="map">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6062793700803!2d30.319250299201936!3d59.93896275006011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522707207017" width="1440" height="416"  allowfullscreen></iframe>
       </div>
+
+
       <div class="container">
         <div class="contact-info">
           <p>
@@ -253,14 +254,14 @@
             <b class="modal-bold">Ваше имя:</b>
           </label>
           <br>
-          <input type="text" name="name" id="wright-name" value="" placeholder="Имя Фамилия">
+          <input type="text" name="first-name" id="wright-name" value="" placeholder="Имя Фамилия">
         </p>
         <p class="wright-item">
           <label for="wright-email">
             <b class="modal-bold">Ваш e-mail:</b>
           </label>
           <br>
-          <input type="email" name="name" id="wright-email" value="" placeholder="email@example.com">
+          <input type="email" name="your-email" id="wright-email" value="" placeholder="email@example.com">
         </p>
         <p class="wright-item">
           <label for="wright-area">
@@ -274,6 +275,9 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+  <script>
+    var link=document.querySelector(".button-contact-red"),popup=document.querySelector(".modal-wright-us"),close=popup.querySelector(".modal-close"),form=popup.querySelector("wright-form"),fio=popup.querySelector("[name=first-name]"),mail=popup.querySelector("[name=your-email]");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show"),fio.focus()}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")}),form.addEventListener("submit",function(e){fio.value&&mail.value||(e.preventDefault(),console.log("Не введены имя и электронная почта "))}),window.addEventListener("keydown",function(e){27===e.keyCode&&(e.preventDefault(),popup.classList.contains("modal-show")&&popup.classList.remove("modal-show"))});
+  </script>
 </body>
 
 </html>
