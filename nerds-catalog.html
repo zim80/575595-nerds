@@ -5,7 +5,7 @@
     <title>Магазин готовых шаблонов</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
 
@@ -346,9 +346,7 @@
         </form>
         <button class="modal-close" type="button">Закрыть</button>
       </section>
-      <script>
-        var link=document.querySelector(".button-contact-red"),popup=document.querySelector(".modal-wright-us"),close=popup.querySelector(".modal-close"),form=popup.querySelector("wright-form"),fio=popup.querySelector("[name=first-name]"),mail=popup.querySelector("[name=your-email]");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show"),fio.focus()}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")}),form.addEventListener("submit",function(e){fio.value&&mail.value||(e.preventDefault(),console.log("Не введены имя и электронная почта "))}),window.addEventListener("keydown",function(e){27===e.keyCode&&(e.preventDefault(),popup.classList.contains("modal-show")&&popup.classList.remove("modal-show"))});
-      </script>
+      <script src="js/script.js"></script>
      </body>
    </html>
 
