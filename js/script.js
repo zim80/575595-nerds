@@ -58,11 +58,4 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-  /* e.preventDefault(), popup.classList.add("modal-show"), fio.focus()
-}), close.addEventListener("click", function(e) {
-    e.preventDefault(), popup.classList.remove("modal-show")
-}), form.addEventListener("submit", function(e) {
-    fio.value && mail.value || (e.preventDefault(), console.log("Не введены имя и электронная почта "))
-}), window.addEventListener("keydown", function(e) {
-    27 === e.keyCode && (e.preventDefault(), popup.classList.contains("modal-show") && popup.classList.remove("modal-show"))
-}); */
+
