@@ -3,7 +3,7 @@ var popup = document.querySelector(".modal-wright-us");
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector(".wright-form");
-var fio = popup.querySelector("[name=first-name]");
+var fullname = popup.querySelector("[name=first-name]");
 var mail = popup.querySelector("[name=your-email]");
 var typetext = popup.querySelector("#wright-area");
 
@@ -11,7 +11,7 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("fio");
+  storage = localStorage.getItem("fullname");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -21,10 +21,10 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
 
   if (storage) {
-    fio.value = storage;
+    fullname.value = storage;
     mail.focus();
   } else {
-  fio.focus();
+  fullname.focus();
 }
 });
 
@@ -35,7 +35,7 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!fio.value || !mail.value|| !typetext.value) {
+  if (!fullname.value || !mail.value|| !typetext.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
@@ -44,7 +44,7 @@ form.addEventListener("submit", function (evt) {
 
   } else {
     if (isStorageSupport) {
-    localStorage.setItem("fio", fio.value);
+    localStorage.setItem("fullname", fullname.value);
     }
   }
 });

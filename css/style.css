@@ -420,58 +420,41 @@ a {
 .filter-option {
   margin-bottom: 22px;
   position: relative;
- /* opacity: 0.4; */
+
 }
 .filter-option-checkbox {
   margin-bottom: 20px;
   position: relative;
-  /* opacity: 0.4; */
-}
 
-/* .filter-option label,
-.filter-option label::before,
-.filter-option-checkbox label,
-.filter-option-checkbox label::before {
-  opacity: 0.4;
 }
-
-.filter-option:hover label,
-.filter-option:hover label::before,
-.filter-input:focus + label::before,
-.filter-input:focus + label::before {
-  opacity: 1.0;
-} */
 
 .filter-option label,
+.filter-option-checkbox label {
+  color: #283136;
+}
+
 .filter-option label::before,
-.filter-option-checkbox label,
 .filter-option-checkbox label::before {
   opacity: 0.4;
 }
 
-.filter-option:hover label,
 .filter-option:hover label::before,
-.filter-input:focus + label,
-.filter-input:focus + label::before,
-.filter-option-checkbox:hover label,
-.filter-option-checkbox:hover label::before {
+.filter-option-checkbox:hover label::before,
+.filter-option:focus label::before,
+.filter-option-checkbox:focus label::before,
+.filter-input:focus + label::before {
   opacity: 1.0;
 }
 
-/* .filter-option-checkbox:hover label,
-.filter-option-checkbox:hover label::before,
-.filter-input:focus + label,
-.filter-input:focus + label::before {
-  opacity: 1.0;
-} */
+.filter-option:hover label,
+.filter-option-checkbox:hover label {
+  color: #000000;
+}
 
-/* .filter-option:hover {
-  opacity: 1.0;
-} */
-
-/* .filter-option-checkbox:hover {
-  opacity: 1.0;
-} */
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.3;
+}
 
 .filter-option-on {
   position: relative;
@@ -480,9 +463,6 @@ a {
 .filter-option-checked {
   position: relative;
 }
-
-
-
 
 .filter-input-radio:checked + label::before {
   content: "";
@@ -493,7 +473,6 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .filter-input-checkbox:checked + label::before {
   content: "";
@@ -521,7 +500,6 @@ a {
 
 }
 
-
 .filter-input-checkbox + label::before {
   content: "";
   width: 25px;
@@ -545,13 +523,6 @@ a {
   background-image: url("../img/radio-on.svg");
 }
 
-/* .filter-option:hover::before {
-   opacity: 1.0;
-} */
-
-/* .filter-option:disabled::before {
-  opacity: 0.1;
-} */
 
 .form-features {
   margin-top: 19px;
@@ -561,20 +532,6 @@ a {
 .filter ul {
   list-style: none;
   line-height: 20px;
-}
-
-/* .filter-input + label {
-  color: #283136;
-}
-
-.filter-input:hover + label {
-  color: #283136;
-} */
-
-.filter-input:disabled + label {
-  color: #000000;
-
-  opacity: 0.1;
 }
 
 .filter-button {
@@ -607,20 +564,41 @@ a {
   margin: 0px 15px 0 10px;
 }
 
-.sorting-position,
-.arrow-position  {
+.sorting-position  {
   list-style: none;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-  opacity: 0.3;
+
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.sorting-position-current,
+
+
+.sorting-position a {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.sorting-position a:hover {
+  opacity: 0.6;
+  color: #000000;
+}
+
+.sorting-position a:active {
+  opacity: 1.0;
+  color: #000000;
+}
+
+.sorting-position-current a {
+opacity: 1.0;
+color: #000000;
+}
+
+
 .arrow-position-current {
   color: #000000;
   opacity: 1.0;
@@ -754,8 +732,17 @@ h3 a {
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url("../img/icon-up-dir.svg");
+  opacity: 0.2;
+  cursor: pointer;
 }
 
+.arrow-position:hover {
+  opacity: 0.4;
+}
+
+.arrow-position:active {
+  opacity: 1.0;
+}
 
 .main-slider {
   font-size: 16px;
@@ -1540,7 +1527,7 @@ input[type="radio"].visually-hidden {
   display: none;
   left: 50%;
   top: 50%;
-  margin-left: -380px;
+  margin-left: -480px;
   margin-top: -280px;
 
   width: 960px;
